@@ -92,7 +92,7 @@ Este proyecto fue desarrollado como parte del proceso de selección para **Devel
 
 ## 👤 Autor
 
-**[Tu Nombre]**
+**[Diego]**
 - GitHub: [@code-diego] (https://github.com/code-diego)
 - LinkedIn: [Diego Torres](https://linkedin.com/in/diegotp)
 
