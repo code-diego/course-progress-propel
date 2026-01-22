@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# 📚 Sistema de Progreso de Cursos - Propel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Componente React desarrollado para **Nonprofit Academy** de Propel. Permite visualizar el progreso de los usuarios en diferentes cursos de forma clara e intuitiva.
 
-## Available Scripts
+## 🎯 Problema que resuelve
 
-In the project directory, you can run:
+Este componente ayuda a que los usuarios vean de forma clara y rápida en qué punto van dentro de un curso. Les da retroalimentación inmediata sobre su progreso y los motiva a seguir avanzando mediante mensajes que se adaptan a su situación actual.
 
-### `npm start`
+## ✨ Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Visualización clara del porcentaje de progreso
+- ✅ Barra de progreso animada con gradientes
+- ✅ Mensajes dinámicos según el avance del curso
+- ✅ Botones adaptativos (Comenzar/Continuar/Revisar)
+- ✅ Diseño responsive para móviles y escritorio
+- ✅ Colores y tipografía oficial de Propel
+- ✅ Animaciones suaves al interactuar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Demo
 
-### `npm test`
+[Ver demo en vivo](#) _(wait)_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologías utilizadas
 
-### `npm run build`
+- React 18
+- CSS3 (con Grid y Flexbox)
+- DM Mono (tipografía oficial de Propel)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Instalación y uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerrequisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 o superior)
+- npm o yarn
 
-### `npm run eject`
+### Pasos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/course-progress-propel.git
+cd course-progress-propel
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Inicia el servidor de desarrollo:
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Abre tu navegador en `http://localhost:3000`
 
-## Learn More
+## 💻 Uso del componente
+```javascript
+import CourseProgress from './CourseProgress';
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<CourseProgress 
+  courseName="Introducción a React"
+  completedLessons={7}
+  totalLessons={10}
+/>
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Props
 
-### Code Splitting
+| Prop | Tipo | Descripción |
+|------|------|-------------|
+| `courseName` | string | Nombre del curso |
+| `completedLessons` | number | Lecciones completadas |
+| `totalLessons` | number | Total de lecciones del curso |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Diseño
 
-### Analyzing the Bundle Size
+El componente respeta la identidad visual de Propel:
+- **Color primario**: Verde oscuro `#0C5133`
+- **Color secundario**: Naranja `#FC5C3A`
+- **Tipografía**: DM Mono
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📱 Responsive
 
-### Making a Progressive Web App
+El diseño se adapta perfectamente a:
+- 📱 Móviles (< 480px)
+- 📱 Tablets (480px - 768px)
+- 💻 Desktop (> 768px)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contribuir
 
-### Advanced Configuration
+Este proyecto fue desarrollado como parte del proceso de selección para **Developer Intern** en Propel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👤 Autor
 
-### Deployment
+**[Tu Nombre]**
+- GitHub: [@code-diego] (https://github.com/code-diego)
+- LinkedIn: [Diego Torres](https://linkedin.com/in/diegotp)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 Licencia
 
-### `npm run build` fails to minify
+Este proyecto es parte de una prueba técnica para Propel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+Desarrollado con ❤️ para [Propel](https://wepropel.org)

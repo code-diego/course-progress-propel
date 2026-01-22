@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'DM Mono', monospace;
+  background: #f5f7f5;
+  color: #1a1a1a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-header {
+  margin-bottom: 48px;
+}
+
+.logo {
+  color: #FC5C3A;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.main-title {
   color: white;
+  background: #0C5133;
+  padding: 32px;
+  border-radius: 8px;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.course-card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e8e8e8;
+}
+
+.course-card:hover {
+  box-shadow: 0 8px 16px rgba(12, 81, 51, 0.12);
+  transform: translateY(-2px);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.course-title {
+  color: #1a1a1a;
+  font-size: 1.15em;
+  font-weight: 500;
+  line-height: 1.4;
+  flex: 1;
+  margin: 0;
+}
+
+.course-button {
+  background: #FC5C3A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.course-button:hover {
+  background: #e54d2a;
+  transform: scale(1.02);
+}
+
+.course-button:active {
+  transform: scale(0.98);
+}
+
+.progress-section {
+  margin-bottom: 16px;
+}
+
+.progress-percentage {
+  color: #1a1a1a;
+  font-size: 1.8em;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: #e8f4ee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FC5C3A, #ff7a5c);
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-status {
+  color: #0C5133;
+  font-size: 0.9em;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.lessons-info {
+  color: #666;
+  font-size: 0.85em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.5em;
+    padding: 24px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .course-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .course-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 24px 16px;
+  }
+  
+  .main-title {
+    font-size: 1.3em;
+    padding: 20px;
   }
 }
