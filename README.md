@@ -18,7 +18,7 @@ Este componente ayuda a que los usuarios vean de forma clara y rápida en qué p
 
 ## 🚀 Demo
 
-[Ver demo en vivo](#) _(wait)_
+[Ver demo en vivo](#) _(https://codesandbox.io/p/github/code-diego/course-progress-propel/main?import=true)_
 
 ## 🛠️ Tecnologías utilizadas
 
